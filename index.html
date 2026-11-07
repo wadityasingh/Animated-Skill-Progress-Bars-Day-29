@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya Singh — Creative Frontend &amp; Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Aditya Singh, Frontend &amp; Web Developer specializing in fluid interactive interfaces, responsive design, and modern web architecture."
+    />
+    <meta property="og:title" content="Aditya Singh — Creative Frontend &amp; Web Developer" />
+    <meta
+      property="og:description"
+      content="Portfolio of Aditya Singh, Frontend &amp; Web Developer specializing in fluid interactive interfaces, responsive design, and modern web architecture."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Outfit (Display), Plus Jakarta Sans (Body), JetBrains Mono (Numbers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Top Bar Navigation (3-Zone Contract) -->
+    <header class="site-header">
+      <div class="container navbar">
+        <!-- Zone 1: Single-line Brand Title -->
+        <a href="#overview" class="brand-link">
+          <span class="brand-name">Aditya Singh</span>
+          <span class="brand-role">· Developer</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button
+          type="button"
+          id="mobile-menu-btn"
+          class="mobile-menu-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Zone 2: Single-line Navigation Links -->
+        <ul id="nav-links" class="nav-links">
+          <li><a href="#overview" class="nav-link active">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#insights" class="nav-link">Technical Notes</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Zone 3: Primary Action & Theme Toggle -->
+        <div class="nav-actions">
+          <button type="button" id="theme-toggle-btn" class="theme-btn" aria-label="Toggle color theme">
+            <!-- Rendered via JS -->
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+            </svg>
+          </button>
+          <a href="#contact" class="btn btn-primary">Let's Connect</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="overview" class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Bio & Core CTAs -->
+            <div class="hero-copy">
+              <div class="hero-kicker">
+                <span>Available for Frontend &amp; Full-Stack Roles</span>
+              </div>
+              <h1 class="hero-headline">
+                Crafting fluid, high-performance web experiences with <span class="hero-gradient-text">precision &amp; craft.</span>
+              </h1>
+              <p class="hero-bio">
+                Hi, I'm Aditya. I build responsive, highly intuitive web interfaces focused on clean semantic architecture,
+                hardware-accelerated animations, and robust performance. From core HTML5/CSS3 foundations to reactive state ecosystems.
+              </p>
+              <div class="hero-cta-group">
+                <a href="#skills" class="btn btn-primary">View Technical Skills</a>
+                <a href="#projects" class="btn btn-secondary">Explore Featured Work</a>
+              </div>
+            </div>
+
+            <!-- Right Column: Developer Snapshot Card -->
+            <div class="profile-card">
+              <div class="profile-card-header">
+                <div class="profile-author">
+                  <div class="author-avatar">AS</div>
+                  <div class="author-info">
+                    <h3>Aditya Singh</h3>
+                    <p>Frontend &amp; Web Engineer</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-metrics">
+                <div class="metric-box">
+                  <span class="metric-num tabular-nums">100%</span>
+                  <span class="metric-desc">Vanilla JS &amp; Modern Frameworks</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num tabular-nums">&lt;16ms</span>
+                  <span class="metric-desc">Smooth 60FPS UI Transitions</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num tabular-nums">98+</span>
+                  <span class="metric-desc">Lighthouse Performance Baseline</span>
+                </div>
+                <div class="metric-box">
+                  <span class="metric-num tabular-nums">WCAG AA</span>
+                  <span class="metric-desc">Accessible &amp; Responsive Layouts</span>
+                </div>
+              </div>
+
+              <div class="stack-strip">
+                <span class="stack-strip-title">Core Ecosystem</span>
+                <div class="stack-tags">
+                  <span class="stack-tag">HTML5</span>
+                  <span class="stack-tag">CSS3</span>
+                  <span class="stack-tag">JavaScript (ES6+)</span>
+                  <span class="stack-tag">React</span>
+                  <span class="stack-tag">TypeScript</span>
+                  <span class="stack-tag">Node.js</span>
+                  <span class="stack-tag">Git</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main Skills Section with Animated Progress Bars (Core Requirement) -->
+      <section id="skills" class="skills-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-kicker">Technical Expertise</span>
+            <h2 class="section-title">Core Proficiencies &amp; Stack</h2>
+            <p class="section-lead">
+              A comprehensive breakdown of technical proficiencies. Each progress bar initializes cleanly at 0% and
+              animates smoothly to its configured percentage when entering your viewport.
+            </p>
+          </div>
+
+          <!-- Filter Toolbar & Replay Controls -->
+          <div class="skills-toolbar">
+            <div class="filter-group" role="tablist" aria-label="Filter skills by domain">
+              <button type="button" class="filter-tab active" data-filter="all" role="tab">All Technologies (8)</button>
+              <button type="button" class="filter-tab" data-filter="frontend" role="tab">Frontend &amp; UI (4)</button>
+              <button type="button" class="filter-tab" data-filter="backend" role="tab">Backend &amp; APIs (2)</button>
+              <button type="button" class="filter-tab" data-filter="tools" role="tab">Tools &amp; Workflow (2)</button>
+            </div>
+
+            <div class="toolbar-controls">
+              <button type="button" id="replay-skills-btn" class="replay-btn" aria-label="Replay progress bar animation">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M23 4v6h-6"></path>
+                  <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                </svg>
+                <span>Replay Animation</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Skills Grid -->
+          <div class="skills-grid">
+            <!-- Required Skill 1: HTML – 90% -->
+            <article class="skill-card" data-category="frontend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polyline points="16 18 22 12 16 6"></polyline>
+                      <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">HTML</h3>
+                    <span class="skill-meta">Frontend · Semantic Markup</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-html"
+                  class="progress-fill"
+                  data-progress="90"
+                  role="progressbar"
+                  aria-label="HTML proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Semantic structure, modern HTML5 elements, ARIA landmarks, and SEO optimization.</p>
+            </article>
+
+            <!-- Required Skill 2: CSS – 85% -->
+            <article class="skill-card" data-category="frontend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">CSS</h3>
+                    <span class="skill-meta">Frontend · Modern Styling</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-css"
+                  class="progress-fill"
+                  data-progress="85"
+                  role="progressbar"
+                  aria-label="CSS proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Flexbox, CSS Grid, custom properties, media queries, and smooth hardware transitions.</p>
+            </article>
+
+            <!-- Required Skill 3: JavaScript – 75% -->
+            <article class="skill-card" data-category="frontend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                      <line x1="15" y1="9" x2="15" y2="15"></line>
+                      <path d="M9 13a2 2 0 0 0 2 2h1a2 2 0 0 0 0-4h-2"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">JavaScript</h3>
+                    <span class="skill-meta">Frontend · ES6+ &amp; DOM APIs</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-javascript"
+                  class="progress-fill"
+                  data-progress="75"
+                  role="progressbar"
+                  aria-label="JavaScript proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Asynchronous execution, IntersectionObserver, event delegation, and modular logic.</p>
+            </article>
+
+            <!-- Required Skill 4: React – 70% -->
+            <article class="skill-card" data-category="frontend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="2"></circle>
+                      <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">React</h3>
+                    <span class="skill-meta">Frontend · Component Ecosystem</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-react"
+                  class="progress-fill"
+                  data-progress="70"
+                  role="progressbar"
+                  aria-label="React proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Hooks architecture, declarative UI paradigms, reusable components, and reactive state.</p>
+            </article>
+
+            <!-- Required Skill 5: Node.js – 65% -->
+            <article class="skill-card" data-category="backend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M12 2L2 7v10l10 5 10-5V7z"></path>
+                      <path d="M12 22V12"></path>
+                      <path d="M22 7l-10 5-10-5"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">Node.js</h3>
+                    <span class="skill-meta">Backend · Server Runtime</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-nodejs"
+                  class="progress-fill"
+                  data-progress="65"
+                  role="progressbar"
+                  aria-label="Node.js proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">RESTful routing, Express middleware, asynchronous file handling, and server logic.</p>
+            </article>
+
+            <!-- Categorized Skill 6: TypeScript – 80% -->
+            <article class="skill-card" data-category="frontend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 7V4h16v3"></path>
+                      <path d="M12 4v16"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">TypeScript</h3>
+                    <span class="skill-meta">Frontend · Type Safety</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-typescript"
+                  class="progress-fill"
+                  data-progress="80"
+                  role="progressbar"
+                  aria-label="TypeScript proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Strict type systems, interfaces, generics, and compile-time bug elimination.</p>
+            </article>
+
+            <!-- Categorized Skill 7: SQL & Databases – 72% -->
+            <article class="skill-card" data-category="backend">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">SQL &amp; Databases</h3>
+                    <span class="skill-meta">Backend · Data Modeling</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-sql"
+                  class="progress-fill"
+                  data-progress="72"
+                  role="progressbar"
+                  aria-label="SQL proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Relational database schemas, normalized tables, structured queries, and data indexing.</p>
+            </article>
+
+            <!-- Categorized Skill 8: Git & GitHub – 88% -->
+            <article class="skill-card" data-category="tools">
+              <div class="skill-top-bar">
+                <div class="skill-identifier">
+                  <div class="skill-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="18" cy="18" r="3"></circle>
+                      <circle cx="6" cy="6" r="3"></circle>
+                      <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                      <line x1="6" y1="9" x2="6" y2="21"></line>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="skill-title">Git &amp; GitHub</h3>
+                    <span class="skill-meta">Tools · Version Control</span>
+                  </div>
+                </div>
+                <span class="skill-percent-display tabular-nums">0%</span>
+              </div>
+              <div class="progress-track">
+                <div
+                  id="bar-git"
+                  class="progress-fill"
+                  data-progress="88"
+                  role="progressbar"
+                  aria-label="Git proficiency"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                  aria-valuenow="0"
+                ></div>
+              </div>
+              <p class="skill-note">Branching workflows, pull request reviews, commit hygiene, and GitHub Pages deployments.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-kicker">Selected Work</span>
+            <h2 class="section-title">Production Projects &amp; Demos</h2>
+            <p class="section-lead">A few engineered web applications demonstrating fluid interaction, clean code, and UI design.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-card-header">
+                <span class="project-category">Full-Stack Application</span>
+                <h3 class="project-title">Prism Analytics Engine</h3>
+                <p class="project-desc">
+                  Real-time analytics dashboard with responsive data charts, live query filters, and low-latency websocket updates.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag-item">React</span>
+                <span class="tag-item">TypeScript</span>
+                <span class="tag-item">Tailwind</span>
+                <span class="tag-item">Node.js</span>
+              </div>
+              <a href="#skills" class="project-link-btn">
+                <span>View Tech Stack</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <span class="project-category">Design System</span>
+                <h3 class="project-title">Aura Component Library</h3>
+                <p class="project-desc">
+                  Headless, accessible UI design system featuring zero layout shift, smooth transitions, and comprehensive keyboard navigation.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag-item">HTML5</span>
+                <span class="tag-item">CSS3</span>
+                <span class="tag-item">Vanilla JS</span>
+                <span class="tag-item">WAI-ARIA</span>
+              </div>
+              <a href="#skills" class="project-link-btn">
+                <span>View Tech Stack</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card-header">
+                <span class="project-category">Backend Service</span>
+                <h3 class="project-title">Pulse API Gateway</h3>
+                <p class="project-desc">
+                  High-throughput RESTful backend service with schema validation, rate-limiting middleware, and PostgreSQL persistence.
+                </p>
+              </div>
+              <div class="project-tags">
+                <span class="tag-item">Node.js</span>
+                <span class="tag-item">Express</span>
+                <span class="tag-item">PostgreSQL</span>
+                <span class="tag-item">REST</span>
+              </div>
+              <a href="#skills" class="project-link-btn">
+                <span>View Tech Stack</span>
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engineering Insights & Interview Notes Section (Requirement #5 handled cleanly with accordion) -->
+      <section id="insights" class="insights-section">
+        <div class="container">
+          <div class="section-head">
+            <span class="section-kicker">Architecture &amp; Core Concepts</span>
+            <h2 class="section-title">Technical Notes &amp; Interview Insights</h2>
+            <p class="section-lead">
+              Practical engineering answers exploring how progress bar animations, scroll intersection triggers, and
+              configurable attributes are architected under the hood. Click any card to expand.
+            </p>
+          </div>
+
+          <div class="accordion-list">
+            <!-- Question 1 -->
+            <div class="accordion-item open">
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="true"
+              >
+                <div class="accordion-title-wrap">
+                  <span class="accordion-index">01</span>
+                  <span class="accordion-title">How would you animate a bar filling to a percentage?</span>
+                </div>
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  To animate a bar filling smoothly, construct an outer container element (<code>.progress-track</code>) with a
+                  fixed height and <code>overflow: hidden</code>. Inside it, place an inner fill element (<code>.progress-fill</code>)
+                  initialized to <code>width: 0%</code>. Apply a CSS transition on the <code>width</code> property with an ease-out timing curve.
+                  When triggered, JavaScript updates the element's inline style (e.g., <code>bar.style.width = target + '%'</code>).
+                  The browser’s layout engine then smoothly interpolates the width from 0% to the target percentage without stutter.
+                </p>
+                <pre class="accordion-code"><code>/* CSS */
+.progress-fill {
+  width: 0%;
+  height: 100%;
+  transition: width 1.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+// JavaScript
+const target = bar.getAttribute('data-progress'); // e.g. "90"
+bar.style.width = `${target}%`;</code></pre>
+              </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+              >
+                <div class="accordion-title-wrap">
+                  <span class="accordion-index">02</span>
+                  <span class="accordion-title">What is IntersectionObserver used for?</span>
+                </div>
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  <code>IntersectionObserver</code> is a high-performance browser API that asynchronously detects when a DOM element
+                  enters or exits the viewport (or a specified scrollable ancestor container).
+                </p>
+                <p style="margin-top: 8px;">
+                  Unlike traditional <code>window.addEventListener('scroll', ...)</code> listeners paired with <code>getBoundingClientRect()</code>—which
+                  fire on the main thread and frequently cause layout thrashing and dropped frames—<code>IntersectionObserver</code> runs
+                  off-thread. In this portfolio, it watches the skills section with a <code>threshold: 0.18</code>, animates the progress bars
+                  only when visible to the visitor, and immediately calls <code>observer.unobserve(entry.target)</code> so the animation doesn't repeat
+                  unintentionally on normal scrolling.
+                </p>
+                <pre class="accordion-code"><code>const observer = new IntersectionObserver((entries, obs) =&gt; {
+  entries.forEach((entry) =&gt; {
+    if (entry.isIntersecting) {
+      animateAllBars();
+      obs.unobserve(entry.target); // Unobserve to prevent unwanted re-runs
+    }
+  });
+}, { threshold: 0.18 });
+
+observer.observe(document.getElementById('skills'));</code></pre>
+              </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+              <button
+                type="button"
+                class="accordion-trigger"
+                aria-expanded="false"
+              >
+                <div class="accordion-title-wrap">
+                  <span class="accordion-index">03</span>
+                  <span class="accordion-title">How would you keep percentages configurable?</span>
+                </div>
+                <svg class="accordion-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="accordion-content">
+                <p>
+                  Percentages are kept configurable by storing each skill's target percentage directly in an HTML5 data attribute
+                  (such as <code>data-progress="90"</code>) on each progress bar element.
+                </p>
+                <p style="margin-top: 8px;">
+                  The JavaScript code queries all <code>.progress-fill</code> elements in a single reusable function, reads their
+                  <code>bar.getAttribute('data-progress')</code> value, clamps it between 0 and 100, and assigns it to <code>style.width</code>.
+                  This decouples the visual styling and logic from the data—meaning skills can be added, removed, or have their percentages adjusted
+                  directly in the HTML without modifying any CSS or JavaScript files.
+                </p>
+                <pre class="accordion-code"><code>&lt;!-- Fully configurable in HTML markup --&gt;
+&lt;div class="progress-fill" data-progress="90"&gt;&lt;/div&gt;
+&lt;div class="progress-fill" data-progress="85"&gt;&lt;/div&gt;
+
+// JavaScript reads dynamically
+const percentage = parseInt(bar.getAttribute('data-progress'), 10);
+bar.style.width = `${percentage}%`;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-card">
+            <div class="contact-info-col">
+              <span class="section-kicker">Get In Touch</span>
+              <h3>Let's build something remarkable together.</h3>
+              <p>
+                Whether you have an upcoming project, are looking to collaborate on high-performance web applications,
+                or want to discuss technical opportunities, my inbox is always open.
+              </p>
+              <div class="contact-methods">
+                <a href="mailto:sadityasingh6275520@gmail.com" class="contact-link-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                  <span>sadityasingh6275520@gmail.com</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>github.com/adityasingh</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Working Contact Form with validation -->
+            <form id="contact-form" class="contact-form">
+              <div id="form-feedback" class="form-feedback"></div>
+
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Jenkins" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="name@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your project or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p class="footer-copy">
+          &copy; 2026 Aditya Singh · Engineered with HTML5, CSS3 &amp; Vanilla JavaScript.
+        </p>
+        <div class="footer-nav">
+          <a href="#overview">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#insights">Technical Notes</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
